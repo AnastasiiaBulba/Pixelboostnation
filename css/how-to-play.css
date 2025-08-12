@@ -1,0 +1,211 @@
+.how-to-play {
+  background: var(--light-color);
+  padding: var(--spacing-xl) 0;
+}
+
+.how-to-play-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.how-to-play-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.how-to-play-card {
+  flex: 1;
+  min-width: 300px;
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.how-to-play-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-secondary);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.how-to-play-card:hover::after {
+  transform: scaleX(1);
+}
+
+.how-to-play-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.how-to-play-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: var(--spacing-sm);
+  padding-right: 60px;
+}
+
+.how-to-play-description {
+  color: var(--dark-color);
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.controls-section {
+  background: var(--white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.controls-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.control-item {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  background: var(--light-color);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-normal);
+}
+
+.control-item:hover {
+  background: var(--accent-color);
+  color: var(--white);
+  transform: translateX(5px);
+}
+
+.control-key {
+  background: var(--dark-color);
+  color: var(--white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-weight: 700;
+  font-family: monospace;
+  min-width: 40px;
+  text-align: center;
+}
+
+.control-description {
+  font-weight: 500;
+}
+
+.pro-tip {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  border-radius: var(--border-radius-md);
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.pro-tip::before {
+  content: "💡";
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-md);
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.pro-tip strong {
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+  .how-to-play-grid {
+    gap: var(--spacing-md);
+  }
+
+  .how-to-play-card {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-to-play {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .how-to-play-grid {
+    flex-direction: column;
+  }
+
+  .how-to-play-card {
+    min-width: 100%;
+  }
+
+  .controls-grid {
+    flex-direction: column;
+  }
+
+  .control-item {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .how-to-play-card {
+    padding: var(--spacing-md);
+  }
+
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    top: 12px;
+    right: 15px;
+  }
+
+  .how-to-play-title {
+    font-size: 1.25rem;
+    padding-right: 50px;
+  }
+}

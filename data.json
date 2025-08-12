@@ -1,0 +1,206 @@
+{
+  "gameInfo": {
+    "title": "Friday Night Funkin Unblocked",
+    "subtitle": "Get Ready to Funk!",
+    "description": "Experience the ultimate rhythm battle in this wildly popular casual arcade music game. Immerse yourself in crazy beats and supercharged duels. Tap the arrows in sync with the beats to nail every note and stay on rhythm!",
+    "playUrl": "https://gamemonetize.com/friday-night-funkin-unblocked-game",
+    "tags": ["Funny", "Music", "Rhythm"]
+  },
+  "features": [
+    {
+      "icon": "🎵",
+      "title": "Amazing Music",
+      "description": "Super original beats and music tracks that will get you addicted to FNF's unique sound tour world!"
+    },
+    {
+      "icon": "⚡",
+      "title": "Fast-Paced Action",
+      "description": "The pace is getting faster and the challenges more exciting with each level you conquer!"
+    },
+    {
+      "icon": "🎮",
+      "title": "Easy Controls",
+      "description": "Simple arrow key controls that are easy to learn but challenging to master perfectly."
+    },
+    {
+      "icon": "🏆",
+      "title": "Competitive Fun",
+      "description": "Face off against all kinds of funky foes in intense rhythm battles that test your skills."
+    },
+    {
+      "icon": "🎨",
+      "title": "Unique Art Style",
+      "description": "Distinctive pixel art graphics that bring the funky world to life with vibrant colors."
+    },
+    {
+      "icon": "🔄",
+      "title": "Endless Replayability",
+      "description": "Multiple difficulty levels and songs ensure you'll never get bored of the funky beats!"
+    }
+  ],
+  "howToPlay": [
+    {
+      "step": 1,
+      "title": "Choose Your Character",
+      "description": "Select from a variety of funky characters, each with their own unique style and personality. Whether you're Boyfriend, Girlfriend, or one of the many challengers, get ready to show off your moves!"
+    },
+    {
+      "step": 2,
+      "title": "Master the Rhythm",
+      "description": "Watch for the arrows that appear on screen and tap the corresponding keys in perfect sync with the beat. The better your timing, the higher your score and the more impressive your performance!"
+    },
+    {
+      "step": 3,
+      "title": "Face the Challenge",
+      "description": "Each opponent brings their own unique music style and difficulty level. Start with easier songs and work your way up to become the ultimate rhythm master!"
+    }
+  ],
+  "controls": [
+    {
+      "key": "←",
+      "description": "Left Arrow"
+    },
+    {
+      "key": "↓",
+      "description": "Down Arrow"
+    },
+    {
+      "key": "↑",
+      "description": "Up Arrow"
+    },
+    {
+      "key": "→",
+      "description": "Right Arrow"
+    }
+  ],
+  "fieldFeatures": [
+    {
+      "icon": "🎯",
+      "text": "Dynamic Backgrounds"
+    },
+    {
+      "icon": "🌈",
+      "text": "Vibrant Color Schemes"
+    },
+    {
+      "icon": "🎭",
+      "text": "Character Animations"
+    },
+    {
+      "icon": "⚡",
+      "text": "Smooth Transitions"
+    },
+    {
+      "icon": "🎨",
+      "text": "Pixel Art Excellence"
+    }
+  ],
+  "gameSectionFeatures": [
+    {
+      "icon": "🎶",
+      "text": "Original Soundtrack"
+    },
+    {
+      "icon": "🎭",
+      "text": "Unique Characters"
+    },
+    {
+      "icon": "🏆",
+      "text": "Competitive Leaderboards"
+    },
+    {
+      "icon": "🌍",
+      "text": "Global Community"
+    },
+    {
+      "icon": "📱",
+      "text": "Cross-Platform Play"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Alex Thompson",
+      "rating": 5,
+      "text": "This game is absolutely addictive! The music is incredible and the rhythm mechanics are so satisfying. I've been playing for hours and still can't get enough of those funky beats!",
+      "date": "2024-12-15",
+      "avatarClass": "avatar-1"
+    },
+    {
+      "name": "Sarah Chen",
+      "rating": 5,
+      "text": "The pixel art style is gorgeous and the character designs are so creative. Each song has its own personality and the difficulty progression is perfect for learning.",
+      "date": "2024-12-12",
+      "avatarClass": "avatar-2"
+    },
+    {
+      "name": "Mike Rodriguez",
+      "rating": 5,
+      "text": "As a rhythm game fan, this is exactly what I've been looking for. The controls are responsive and the music selection is diverse. Can't wait for more songs to be added!",
+      "date": "2024-12-10",
+      "avatarClass": "avatar-3"
+    },
+    {
+      "name": "Emma Wilson",
+      "rating": 5,
+      "text": "The game runs perfectly on my device and the unblocked version means I can play anywhere. The community is great and there are so many mods to explore!",
+      "date": "2024-12-08",
+      "avatarClass": "avatar-4"
+    },
+    {
+      "name": "David Kim",
+      "rating": 5,
+      "text": "Perfect for quick gaming sessions! The songs are catchy and the gameplay is smooth. I love how each character has their own unique style and music genre.",
+      "date": "2024-12-05",
+      "avatarClass": "avatar-5"
+    },
+    {
+      "name": "Lisa Anderson",
+      "rating": 5,
+      "text": "This game brings back the nostalgia of classic rhythm games while adding modern touches. The difficulty curve is well-balanced and the music is absolutely fire!",
+      "date": "2024-12-03",
+      "avatarClass": "avatar-6"
+    }
+  ],
+  "news": {
+    "gameUpdates": [
+      {
+        "title": "New Song Pack Released",
+        "excerpt": "Get ready for the hottest new tracks in our latest update! We've added 5 brand new songs with varying difficulty levels.",
+        "date": "2024-12-20",
+        "category": "Game Updates"
+      },
+      {
+        "title": "Performance Improvements",
+        "excerpt": "We've optimized the game engine for smoother gameplay and better performance across all devices.",
+        "date": "2024-12-18",
+        "category": "Game Updates"
+      }
+    ],
+    "trailDiaries": [
+      {
+        "title": "Behind the Scenes: Character Design",
+        "excerpt": "Take a peek into our creative process as we design the latest characters for Friday Night Funkin.",
+        "date": "2024-12-16",
+        "category": "Trail Diaries",
+        "image": "funkin-block1.jpg"
+      },
+      {
+        "title": "Music Production Secrets",
+        "excerpt": "Discover how we create the infectious beats and melodies that make Friday Night Funkin so memorable.",
+        "date": "2024-12-14",
+        "category": "Trail Diaries",
+        "image": "funkin-block2.jpg"
+      }
+    ]
+  },
+  "contactInfo": {
+    "email": "contact@pixelboostnation.com",
+    "phone": "+66 515 123 456",
+    "address": "1 Cavill Avenue, Surfers Paradise QLD 4217, Australia",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.1234567890123!2d153.430123456789!3d-28.001234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9104b2b2b2b2b2%3A0x2b2b2b2b2b2b2b2b!2s1%20Cavill%20Ave%2C%20Surfers%20Paradise%20QLD%204217%2C%20Australia!5e0!3m2!1sen!2sau!4v1234567890123"
+  },
+  "meta": {
+    "description": "Friday Night Funkin Unblocked is a wildly popular casual arcade music game where you can immerse yourself in the crazy beats and supercharged duels. Tap the arrows in sync with the beats to nail every note and stay on rhythm! Face off against all kinds of funky foes. The pace is getting faster and the challenges more exciting! Super original beats and music tracks, let you get addicted to FNFs unique sound tour world!",
+    "keywords": "Friday Night Funkin, FNF, rhythm game, music game, arcade game, unblocked game, casual game, music, rhythm, funny"
+  }
+}

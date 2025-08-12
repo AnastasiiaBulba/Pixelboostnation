@@ -1,0 +1,125 @@
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--dark-color);
+  color: var(--white);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 1001;
+  transform: translateY(100%);
+  transition: transform var(--transition-normal);
+}
+
+.cookie-bar.show {
+  transform: translateY(0);
+}
+
+.cookie-bar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.cookie-text {
+  flex: 1;
+  min-width: 300px;
+  line-height: 1.6;
+}
+
+.cookie-text strong {
+  color: var(--primary-color);
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}
+
+.cookie-btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie-btn-accept {
+  background: var(--gradient-primary);
+  color: var(--white);
+}
+
+.cookie-btn-accept:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.cookie-btn-decline {
+  background: transparent;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+}
+
+.cookie-btn-decline:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.cookie-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-normal);
+}
+
+.cookie-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cookie-bar {
+    padding: var(--spacing-sm);
+  }
+
+  .cookie-bar-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+
+  .cookie-text {
+    min-width: 100%;
+  }
+
+  .cookie-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .cookie-bar {
+    padding: var(--spacing-xs);
+  }
+
+  .cookie-text {
+    font-size: 0.875rem;
+  }
+
+  .cookie-btn {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.8rem;
+  }
+}

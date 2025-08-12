@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friday Night Funkin News - Pixelboostnation.com</title>
+    <meta
+      name="description"
+      content="Stay updated with the latest news, updates, and behind-the-scenes content from Friday Night Funkin. Get the scoop on new features, song packs, and development insights."
+    />
+    <meta
+      name="keywords"
+      content="Friday Night Funkin news, FNF updates, game updates, trail diaries, development news"
+    />
+    <link rel="icon" type="image/x-icon" href="img/funkin512.jpg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/news.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main>
+      <section class="news-hero">
+        <div class="container">
+          <h1>Friday Night Funkin News</h1>
+          <p>Stay updated with the latest from the funky world!</p>
+        </div>
+      </section>
+
+      <section class="news-content">
+        <div class="container">
+          <div class="news-category">
+            <h2>Game Updates</h2>
+            <div class="news-grid" id="game-updates-grid">
+              <!-- Game updates will be loaded here -->
+            </div>
+            <div class="load-more-section">
+              <button
+                class="btn btn-secondary"
+                id="load-more-game-updates-btn"
+                onclick="loadMoreGameUpdates()"
+              >
+                Load More Content
+              </button>
+            </div>
+          </div>
+
+          <div class="news-category">
+            <h2>Trail Diaries</h2>
+            <div class="news-grid" id="trail-diaries-grid">
+              <!-- Trail diaries will be loaded here -->
+            </div>
+            <div class="load-more-section">
+              <button
+                class="btn btn-secondary"
+                id="load-more-trail-diaries-btn"
+                onclick="loadMoreTrailDiaries()"
+              >
+                Load More Content
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- News Modal -->
+    <div id="news-modal" class="news-modal">
+      <div class="news-modal-content">
+        <span class="news-modal-close" onclick="closeNewsModal()">&times;</span>
+        <div class="news-modal-header">
+          <div class="news-modal-category" id="modal-category"></div>
+          <div class="news-modal-date" id="modal-date"></div>
+        </div>
+        <h2 class="news-modal-title" id="modal-title"></h2>
+        <div class="news-modal-image" id="modal-image"></div>
+        <p class="news-modal-excerpt" id="modal-excerpt"></p>
+        <div class="news-modal-full-content" id="modal-full-content"></div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+  </body>
+</html>
