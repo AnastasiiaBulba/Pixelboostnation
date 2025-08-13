@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Cookie Banner</title>
+    <link rel="stylesheet" href="css/cookie-bar.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f0f0f0;
+      }
+      .test-controls {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .test-controls button {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .test-controls button:hover {
+        background: #0056b3;
+      }
+      .status {
+        background: #e9ecef;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧪 Test Cookie Banner</h1>
+
+    <div class="test-controls">
+      <h3>Test Controls:</h3>
+      <button onclick="resetCookies()">Reset Cookie Preferences</button>
+      <button onclick="showBanner()">Show Banner</button>
+      <button onclick="checkStatus()">Check Status</button>
+      <button onclick="clearStorage()">Clear Local Storage</button>
+    </div>
+
+    <div class="status" id="status">
+      <strong>Status:</strong> <span id="status-text">Loading...</span>
+    </div>
+
+    <div class="status">
+      <strong>Instructions:</strong>
+      <ol>
+        <li>Click "Reset Cookie Preferences" to test the banner</li>
+        <li>Accept or reject cookies</li>
+        <li>Refresh the page - banner should not appear</li>
+        <li>Use "Reset Cookie Preferences" to test again</li>
+      </ol>
+    </div>
+
+    <script src="js/cookie-bar.js"></script>
+    <script>
+      function resetCookies() {
+        if (window.cookieBanner) {
+          window.cookieBanner.resetPreferences();
+          alert(
+            "Cookie preferences reset! Refresh the page to see the banner again."
+          );
+        } else {
+          alert("Cookie banner not initialized yet!");
+        }
+      }
+
+      function showBanner() {
+        if (window.cookieBanner) {
+          window.cookieBanner.showBanner();
+        } else {
+          alert("Cookie banner not initialized yet!");
+        }
+      }
+
+      function checkStatus() {
+        const status = localStorage.getItem("cookie-preferences");
+        const statusText = document.getElementById("status-text");
+
+        if (status) {
+          const prefs = JSON.parse(status);
+          statusText.innerHTML = `
+                    <strong>Analytics:</strong> ${
+                      prefs.analytics ? "✅ Enabled" : "❌ Disabled"
+                    }<br>
+                    <strong>Marketing:</strong> ${
+                      prefs.marketing ? "✅ Enabled" : "❌ Disabled"
+                    }<br>
+                    <strong>Necessary:</strong> ${
+                      prefs.necessary ? "✅ Enabled" : "❌ Disabled"
+                    }<br>
+                    <strong>Has Interacted:</strong> ${
+                      prefs.hasInteracted ? "✅ Yes" : "❌ No"
+                    }<br>
+                    <strong>Show Banner:</strong> ${
+                      prefs.showBanner ? "✅ Yes" : "❌ No"
+                    }
+                `;
+        } else {
+          statusText.textContent = "No cookie preferences found";
+        }
+      }
+
+      function clearStorage() {
+        localStorage.clear();
+        alert(
+          "Local storage cleared! Refresh the page to see the banner again."
+        );
+      }
+
+      // Check status when page loads
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(checkStatus, 1000);
+      });
+    </script>
+  </body>
+</html>
