@@ -26,12 +26,12 @@ function loadHeader() {
     headerPlaceholder.innerHTML = `
             <header class="header">
                 <div class="header-container">
-                    <a href="index.html" class="logo">
+                    <a href="./" class="logo">
                         <div class="logo-icon">🎵</div>
                         <span>Friday Night Funkin</span>
                     </a>
                     <nav class="nav">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="./" class="nav-link">Home</a>
                         <a href="funkin-news.html" class="nav-link">News</a>
                         <a href="funkin-contacts.html" class="nav-link">Contacts</a>
                         <a href="funkin-privacy.html" class="nav-link">Privacy</a>
