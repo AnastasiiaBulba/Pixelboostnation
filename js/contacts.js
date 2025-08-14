@@ -61,13 +61,6 @@ function validateField(field) {
       }
       break;
 
-    case "tel":
-      if (value && !isValidPhone(value)) {
-        isValid = false;
-        errorMessage = "Please enter a valid phone number";
-      }
-      break;
-
     case "textarea":
       if (field.required && !value) {
         isValid = false;
@@ -88,11 +81,6 @@ function validateField(field) {
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
-}
-
-function isValidPhone(phone) {
-  const phoneRegex = /^[0-9+\-\s()]+$/;
-  return phoneRegex.test(phone);
 }
 
 function showErrorMessage(field, message) {

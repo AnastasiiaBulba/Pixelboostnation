@@ -107,35 +107,19 @@
                     required
                     pattern="[A-Za-z\s]+"
                     title="Please enter only letters and spaces"
+                    placeholder="Enter your full name"
                   />
                 </div>
 
                 <div class="form-group">
                   <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="phone">Phone Number</label>
                   <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9+\-\s()]+"
-                    title="Please enter only numbers, spaces, and basic phone characters"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email address"
                   />
-                </div>
-
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <select id="subject" name="subject">
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Technical Support</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="business">Business Partnership</option>
-                    <option value="other">Other</option>
-                  </select>
                 </div>
 
                 <div class="form-group">
@@ -145,6 +129,7 @@
                     name="message"
                     rows="5"
                     required
+                    placeholder="Enter your message here..."
                   ></textarea>
                 </div>
 

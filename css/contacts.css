@@ -199,9 +199,9 @@
   box-shadow: 0 0 0 3px rgba(69, 183, 209, 0.1);
 }
 
-.form-group input:invalid,
-.form-group select:invalid,
-.form-group textarea:invalid {
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
   border-color: var(--primary-color);
 }
 

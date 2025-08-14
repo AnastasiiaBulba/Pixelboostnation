@@ -9,22 +9,24 @@ function initHero() {
   if (heroPlaceholder) {
     heroPlaceholder.innerHTML = `
             <section class="hero">
-                <div class="hero-content">
-                    <h1 class="hero-title">Friday Night Funkin Unblocked</h1>
-                    <p class="hero-subtitle">Get Ready to Funk!</p>
-                    <p class="hero-description">
-                        Experience the ultimate rhythm battle in this wildly popular casual arcade music game. 
-                        Immerse yourself in crazy beats and supercharged duels. Tap the arrows in sync with the beats 
-                        to nail every note and stay on rhythm!
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#features" class="btn hero-btn hero-btn-primary">
-                            Learn More
-                        </a>
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Friday Night Funkin Unblocked</h1>
+                        <p class="hero-subtitle">Get Ready to Funk!</p>
+                        <p class="hero-description">
+                            Experience the ultimate rhythm battle in this wildly popular casual arcade music game. 
+                            Immerse yourself in crazy beats and supercharged duels. Tap the arrows in sync with the beats 
+                            to nail every note and stay on rhythm!
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#features" class="btn hero-btn hero-btn-primary">
+                                Learn More
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <img src="img/funkin-hero.jpg" alt="Friday Night Funkin Game" loading="lazy">
+                    <div class="hero-image">
+                        <img src="img/funkin-hero.jpg" alt="Friday Night Funkin Game" loading="lazy">
+                    </div>
                 </div>
             </section>
         `;
@@ -62,7 +64,7 @@ function initHeroScrollEffects() {
 
     if (heroImage && window.innerWidth > 768) {
       const rate = scrolled * -0.5;
-      heroImage.style.transform = `translateY(-50%) translateX(${rate}px)`;
+      heroImage.style.transform = `translateX(${rate}px)`;
     }
   });
 }

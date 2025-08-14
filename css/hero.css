@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgb(0 0 0 / 92%), rgb(0 0 0 / 77%)),
     url("../img/funkin-hero.jpg");
   background-size: cover;
   background-position: center;
@@ -8,15 +8,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   color: var(--white);
   position: relative;
   margin-top: 70px;
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 var(--spacing-lg);
+  gap: var(--spacing-xl);
+}
+
 .hero-content {
-  max-width: 800px;
-  padding: 0 var(--spacing-sm);
+  max-width: 500px;
+  flex-shrink: 0;
   z-index: 2;
 }
 
@@ -78,16 +88,14 @@
 }
 
 .hero-image {
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
   width: 300px;
   height: 300px;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
   animation: fadeInRight 1s ease-out 0.8s both;
   z-index: 1;
+  flex-shrink: 0;
 }
 
 .hero-image img {
@@ -101,10 +109,10 @@
 @keyframes float {
   0%,
   100% {
-    transform: translateY(-50%) translateX(0);
+    transform: translateX(0);
   }
   50% {
-    transform: translateY(-50%) translateX(10px);
+    transform: translateX(10px);
   }
 }
 
@@ -118,10 +126,14 @@
     font-size: 3rem;
   }
 
+  .hero-container {
+    max-width: 1000px;
+    gap: var(--spacing-lg);
+  }
+
   .hero-image {
     width: 250px;
     height: 250px;
-    right: 5%;
   }
 }
 
@@ -130,6 +142,17 @@
     background-attachment: scroll;
     min-height: 80vh;
     margin-top: 60px;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-title {

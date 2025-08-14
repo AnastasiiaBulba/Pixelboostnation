@@ -35,6 +35,7 @@ function loadHeader() {
                         <a href="funkin-news.html" class="nav-link">News</a>
                         <a href="funkin-contacts.html" class="nav-link">Contacts</a>
                         <a href="funkin-privacy.html" class="nav-link">Privacy</a>
+                        <a href="funkin-cookies.html" class="nav-link">Cookies</a>
                     </nav>
                     <div class="mobile-menu-toggle">
                         <span></span>
