@@ -28,7 +28,7 @@ function loadHeader() {
                 <div class="header-container">
                     <a href="./" class="logo">
                         <div class="logo-icon">🎵</div>
-                        <span>Friday Night Funkin</span>
+                        <span>Pixelboostnation.com</span>
                     </a>
                     <nav class="nav">
                         <a href="./" class="nav-link">Home</a>
